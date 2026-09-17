@@ -1,8 +1,8 @@
 	.section	__TEXT,__text,regular,pure_instructions
 	.build_version macos, 26, 0	sdk_version 26, 2
-	.globl	_main                           ; -- Begin function main
+	.globl	i_am                           ; -- Begin function main
 	.p2align	2
-_main:                                  ; @main
+i_am:                                  ; @main
 	.cfi_startproc
 ; %bb.0:
 	sub	sp, sp, #32
@@ -25,6 +25,6 @@ _main:                                  ; @main
                                         ; -- End function
 	.section	__TEXT,__cstring,cstring_literals
 l_.str:                                 ; @.str
-	.asciz	"Hello World!"
+	.asciz	"I am Entony."
 
 .subsections_via_symbols
